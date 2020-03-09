@@ -1,0 +1,22 @@
+.footer
+  background-color: #690102
+  padding: 83px 0 20px
+  &-btn
+    text-align: center
+    margin-bottom: 83px
+  &-copy
+    text-align: center
+    font-weight: 700
+    &__list
+      list-style: none
+      &-item
+        display: inline-block
+        padding: 0 10px
+        position: relative
+        &:before
+          content: '|'
+          position: absolute
+          left: -5px
+
+.footer-copy__list-item:first-child:before
+  content: ''

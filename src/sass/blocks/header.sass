@@ -1,0 +1,147 @@
+.header
+  height: 100vh
+  position: absolute
+  z-index: 5
+  background: rgba(0, 0, 0, 0.3)
+  left: 0
+  right: 0
+  &-top
+    display: flex
+    justify-content: space-between
+
+.header-btn
+  width: 60px
+  height: 60px
+  border: 1px solid #ffffff
+  margin-top: 31px
+  background: rgba(255, 255, 255, 0.1)
+  cursor: pointer
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  &__line
+    width: 36px
+    height: 2px
+    background-color: #fff
+    margin: 5px 0
+
+.logo
+  padding-top: 36px
+  margin-bottom: 29px
+
+.header-content
+  &__title
+    font-family: $secondary-font-family
+    font-size: 96px
+    line-height: 112px
+    margin-bottom: 40px
+  &__text
+    width: 284px
+    margin-bottom: 25px
+  &__btn
+    display: inline-block
+    border: 1px solid #ffffff
+    padding: 30px 62px
+    background: rgba(255, 255, 255, 0.15)
+    transition: all .5s
+    &:hover
+      background-color: #770302
+
+//      SLIDER STYLES
+
+.slider
+  &__item
+    height: 100vh
+    background-repeat: no-repeat
+    -webkit-background-size: cover
+    background-size: cover
+    background-position: center center
+
+.slider .slick-dots button
+  width: 15px
+  height: 15px
+  background: #0b0b0b
+  -webkit-border-radius: 50%
+  -moz-border-radius: 50%
+  border-radius: 50%
+  border: 0
+  padding: 0
+  font-size: 0
+  cursor: pointer
+  outline: none
+
+.slider .slick-dots .slick-active button
+  background-color: #fff
+
+.slider .slick-dots li
+  display: inline-block
+  margin: 0 5px
+
+.slider .slick-dots
+  margin: -55px auto 0
+  position: relative
+  z-index: 6
+  max-width: 1230px
+  padding: 0 15px
+
+
+
+// POPUP MENU
+.menu
+  background-color: #000
+  position: absolute
+  top: 0
+  left: -100%
+  width: 100%
+  transition: all .5s
+  z-index: 7
+  &-popup
+    position: relative
+  &__list
+    height: 100vh
+    display: flex
+    align-items: center
+    &-links
+      list-style: none
+      &-item
+        font-size: 48px
+        line-height: 56px
+        font-weight: bold
+        padding: 30px 25px 14px 0
+        border-bottom: 3px solid #b70021
+        display: inline-block
+        min-width: 368px
+        transition: all .5s
+
+.menu__list-links-item:hover
+  border-color: #ffffff
+  color: #b70021
+  transform: scale(1.2)
+  margin-left: 37px
+
+.menu.active
+  left: 0
+
+.close-btn
+  width: 50px
+  height: 50px
+  position: absolute
+  right: 15px
+  top: 31px
+  cursor: pointer
+
+.close-btn:after,
+.close-btn:before
+  content: ''
+  width: 70px
+  height: 2px
+  background-color: #fff
+  position: absolute
+  transform-origin: left
+
+.close-btn:after
+  transform: rotate(45deg)
+.close-btn:before
+  transform: rotate(-45deg)
+  bottom: -1px

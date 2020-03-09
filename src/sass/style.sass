@@ -1,0 +1,47 @@
+@import 'blocks/fonts.sass'
+@import 'blocks/header.sass'
+@import 'blocks/statistics.sass'
+@import 'blocks/video.sass'
+@import 'blocks/advantages.sass'
+@import 'blocks/design.sass'
+@import 'blocks/footer.sass'
+@import 'blocks/media.sass'
+
+
+$bg-color: #0B0B0B
+$font-color: #ffffff
+$font-size-default: 24px
+$line-height-default: 28px
+
+
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
+body
+  background-color: $bg-color
+  color: $font-color
+  font-size: $font-size-default
+  line-height: $line-height-default
+
+a
+  color: $font-color
+  text-decoration: none
+
+.container
+  padding: 0 15px
+  max-width: 1230px
+  margin: 0 auto
+
+.button
+  display: inline-block
+  border: 1px solid #ffffff
+  padding: 30px 62px
+  background: rgba(255, 255, 255, 0.15)
+  transition: all .5s
+.button:hover
+  background-color: #770302
+.footer .button:hover
+  background: #000
+  
